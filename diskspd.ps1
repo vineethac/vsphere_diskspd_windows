@@ -70,7 +70,7 @@ function diskspdfunc{
 		    Write-Host $profile,$oio,$filename  $TBytes  $RBytes  $WBytes  $TIOS  $RIOS  $WIOS  $TBW $RBW  $WBW  $TIOPS  $RIOPS  $WIOPS  $TLAT  $RLAT  $WLAT
 		    
             #Insert data into csv in structured format
-		    $NewLine = "{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17}" -f $profile,$oio,$filename,$intTBytes,$RBytes,$WBytes,$TIOS,$RIOS,$WIOS,$TBW,$RBW,$WBW,$TIOPS,$RIOPS,$WIOPS,$TLAT,$RLAT,$WLAT | Add-Content $PSScriptRoot\CSV_to_Logstash\$logfname
+		    $NewLine = "{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17}" -f $profile,$oio,$filename,$TBytes,$RBytes,$WBytes,$TIOS,$RIOS,$WIOS,$TBW,$RBW,$WBW,$TIOPS,$RIOPS,$WIOPS,$TLAT,$RLAT,$WLAT | Add-Content $PSScriptRoot\CSV_to_Logstash\$logfname
 		
 		    $k =$k+1
 		
